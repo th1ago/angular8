@@ -1,0 +1,33 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">nome do leilão</th>
+      <th scope="col">valor inicial</th>
+      <th scope="col">indicador</th>
+      <th scope="col">usuário responsável</th>
+      <th scope="col">data de abertura</th>
+      <th scope="col">finalizado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let itemLista of lista">
+      <td>{{itemLista.nome}}</td>
+      <td>{{itemLista.preco}}</td>
+      <td>{{itemLista.indicador}}</td>
+      <td>{{itemLista.responsavel}}</td>
+      <td>{{itemLista.data}}</td>
+      <td>{{itemLista.finalizado}}</td>
+      <button type="button"
+        class="btn btn-outline-warning"
+        [routerLink]="['editar']"
+        (click)="onEdit(itemLista.id)">
+        Editar
+      </button>
+      <button type="button"
+        class="btn btn-outline-danger"
+        (click)="onDelete(itemLista.id)">
+        Deletar
+      </button>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,33 @@
+<form [formGroup]='formLeilao' class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3 form-group">
+      <label for="nome">Nome do leilao</label>
+      <input type="text" class="form-control" id="nome" formControlName="nome" required>
+    </div>
+    <div class="col-md-4 mb-3 form-group">
+      <label for="preco">Valor inicial</label>
+      <input type="text" class="form-control" id="preco" formControlName="preco" required>
+    </div>
+    <div class="col-md-4 mb-3 form-group">
+      <label for="indicador">Indicador</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="Indicador" formControlName="indicador" aria-describedby="Indicador" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="responsavel">Usuario responsavel</label>
+      <input type="text" class="form-control" id="responsavel" formControlName="responsavel" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="data">Data de abertura</label>
+      <input type="text" class="form-control" id="data" formControlName="data" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="finalizado">finalizado</label>
+      <input type="text" class="form-control" id="finalizado" formControlName="finalizado">
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit" [disabled]="!formLeilao.valid" (click)="submit()">Salvar</button>
+</form>

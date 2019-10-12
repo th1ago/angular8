@@ -1,0 +1,21 @@
+<form [formGroup]='formLogin' class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="col-md-4 mb-3 form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" formControlName="email" id="email" placeholder="email" required>
+      </div>
+      <div class="col-md-4 mb-3 form-group">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" formControlName="senha" id="senha" placeholder="senha" required>
+      </div>
+    </div>
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+          <button type="submit" name="action" (click)="fazerLogin()" class="btn btn-primary">Login</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="Second group">
+          <button type="submit" name="action" (click)="fazerLogout()" class="btn btn-primary">Logout</button>
+      </div>
+    </div>
+  </form>

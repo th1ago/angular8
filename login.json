@@ -1,0 +1,14 @@
+{
+  "user": [
+    {
+      "email":"teste",
+      "senha":"123",
+      "status": "ativo"
+    },
+    {
+      "email":"thiago",
+      "senha":"123",
+      "status": "desativado"
+    }
+  ]
+}
