@@ -8,7 +8,6 @@ import { map, switchMap } from 'rxjs/operators';
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.css'],
   preserveWhitespaces: true
 })
 export class CadastroComponent implements OnInit {
