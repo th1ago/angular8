@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css'],
   preserveWhitespaces: true
 })
 export class ListComponent implements OnInit {
